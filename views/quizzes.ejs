@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Quizzes </title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Quizzes</h1>
+    <a href="/">Inicio</a>
+    <ul>
+      <% for (let i in quizzes) { %>
+      <% const quiz = quizzes[i]; %>
+      <il>
+        <%= quiz.question %> : <%= quiz.answer %><br>
+       </il> 
+
+      <% } %>
+    </ul>
+  </body>
+</html>
